@@ -1,0 +1,6 @@
+\rm -f counter.vcd
+iverilog -o counter.vpp counter_tb.v counter.v
+vvp counter.vpp
+gtkwave counter.vcd
+# vvp counter.vpp -lxt2
+# gtkwave counter.lxt
