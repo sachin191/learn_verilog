@@ -1,0 +1,4 @@
+# gcc -c -fpic -I/usr/local/include/iverilog/ hello.c
+# gcc -shared -o hello.vpi hello.o -lvpi
+iverilog-vpi hello.c
+iverilog -ohello.vvp hello.v
